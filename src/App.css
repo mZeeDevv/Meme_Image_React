@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:  border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body 
+{
+    background-color: #444;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+    background-color: #3333;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+    color: #ffff;
+    font-size: 1rem
 }
-
-.App-link {
-  color: #61dafb;
+main{
+    padding: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form
+{
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap : 17px;
+}
+button
+{
+    font: bold;
+    border: 1px solid black;
+    background: rgb(103, 103, 231);
+    grid-column: 1 / -1;
+    color: #fff;
+    font-size: 25px;
+}
+input {
+    padding: 5px;
+}
+img {
+   width: 500px;
+   height: 500px;
+}
+.meme {
+    position: relative;
+}
+.meme-top {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    text-shadow: 6px 3px 3px saddlebrown;
+    font-size: 38px;
+}
+.meme-bottom {
+    text-shadow: 6px 3px 3px saddlebrown;
+    font-size: 38px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    width: 50%;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
